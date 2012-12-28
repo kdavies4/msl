@@ -1409,9 +1409,9 @@ argument):</p>
              "dB");
   type EquivalentAbsorptionArea = Real (final quantity="Area", final unit="m2");
   type ReverberationTime = Real (final quantity="Time", final unit="s");
-  type LoundnessLevel = Real (final quantity="LoundnessLevel", final unit=
+  type LoudnessLevel = Real (final quantity="LoudnessLevel", final unit=
           "phon");
-  type Loundness = Real (final quantity="Loundness", final unit="sone");
+  type Loudness = Real (final quantity="Loudness", final unit="sone");
 
   // Physical chemistry and molecular physics (chapter 8 of ISO 31-1992)
   type RelativeAtomicMass = Real (final quantity="RelativeAtomicMass", final unit=

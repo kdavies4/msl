@@ -6092,7 +6092,7 @@ on the model behaviour.
         input Modelica.SIunits.Temp_K tnom "Nominal temperature";
 
         output Modelica.SIunits.Voltage junctionpot "Junction potential";
-        output Real jucntioncap "Junction capacitance";
+        output Real junctioncap "Junction capacitance";
 
       protected
         Modelica.SIunits.Voltage phibtemp;
@@ -6128,7 +6128,7 @@ on the model behaviour.
         junctionpot := pbfact+fact2*pbo;
         gmaold      := (phi0 -pbo)/pbo;
         gmanew      := (junctionpot-pbo)/pbo;
-        jucntioncap := cap0 /
+        junctioncap := cap0 /
                        (1+mcoeff* (400e-6*(tnom-Spice3.Internal.SpiceConstants.REFTEMP)-gmaold))  *
                        (1+mcoeff* (400e-6*(temp-Spice3.Internal.SpiceConstants.REFTEMP)-gmanew));
 
@@ -6859,7 +6859,7 @@ on the model behaviour.
         Real m_sourceSquares(   start = 1.0) "NRS, length of source in squares";
         Modelica.SIunits.Length m_drainPerimeter(  start = 0.0)
           "PD, Drain perimeter";
-        Modelica.SIunits.Length m_sourcePerimeter( start = 0.0)
+        Modelica.SIunits.Length m_sourcePerimiter( start = 0.0)
           "PS, Source perimeter";
         Modelica.SIunits.Voltage m_dICVDS(          start = 0.0)
           "IC_VDS, Initial D-S voltage";
@@ -6876,7 +6876,7 @@ on the model behaviour.
       //----------------------obsolete-----------------------------------
         Integer m_bPMOS(        start = 0) "P type MOSFET model";
         Integer m_nLevel(       start = 1) "MOS model level";
-        Modelica.SIunits.Length m_drainPerimiter(  start = 0.0)
+        Modelica.SIunits.Length m_drainPerimeter(  start = 0.0)
           "PD, Drain perimeter";
         Modelica.SIunits.Length m_sourcePerimiter( start = 0.0)
           "PS, Source perimeter";
@@ -10245,7 +10245,7 @@ to the internal parameters (e.g., m_drainResistance). It also does the analysis 
         dev.m_sourceArea := AS;       // AS, area of source diffusion
         dev.m_drainSquares := NRD;    // NRD, length of drain in squares
         dev.m_sourceSquares := NRS;   // NRS, length of source in squares
-        dev.m_drainPerimiter := PD;   // PD, Drain perimeter;
+        dev.m_drainPerimeter := PD;   // PD, Drain perimeter;
         dev.m_sourcePerimiter := PS;  // PS, Source perimeter
 
           dev.m_dICVDSIsGiven := if          (IC > -1e40) then 1 else 0;
