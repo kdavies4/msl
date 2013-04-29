@@ -78,10 +78,11 @@ package HeatExchanger "Demo of a heat exchanger model"
         use_eps_Re=true)             annotation (Placement(transformation(extent=
               {{60,70},{80,90}}, rotation=0)));
   equation
-    connect(massFlowRate1.ports[1], HEX.port_a1)        annotation (Line(points={
-            {-46,0},{-40,0},{-40,15.4},{-29,15.4}}, color={0,127,255}));
-    connect(HEX.port_b1, ambient1.ports[1])        annotation (Line(points={{37,
-            15.4},{48.5,15.4},{48.5,34},{62,34}}, color={0,127,255}));
+    connect(massFlowRate1.ports[1], HEX.port_a1)        annotation (Line(points={{-46,
+            5.55112e-16},{-40,5.55112e-16},{-40,15.4},{-29,15.4}},
+                                                    color={0,127,255}));
+    connect(HEX.port_b1, ambient1.ports[1])        annotation (Line(points={{37,15.4},
+            {48.5,15.4},{48.5,34},{62,34}},       color={0,127,255}));
     connect(Ramp1.y, massFlowRate2.m_flow_in) annotation (Line(points={{-77,34},
             {-74,34},{-74,42},{-66,42}},  color={0,0,127}));
     connect(massFlowRate2.ports[1], HEX.port_b2)
@@ -350,12 +351,12 @@ package HeatExchanger "Demo of a heat exchanger model"
           color={0,127,255},
           thickness=0.5));
       connect(wall.heatPort_b, pipe_1.heatPorts) annotation (Line(
-          points={{-10,-8.5},{-10,-36.8},{-9.7,-36.8}},
+          points={{-10,-8.5},{-10,-36.8},{-10,-36.8}},
           color={191,0,0},
           smooth=Smooth.None));
       connect(pipe_2.heatPorts[nNodes:-1:1], wall.heatPort_a[1:nNodes])
         annotation (Line(
-          points={{-10.3,44.8},{-10.3,31.7},{-10,31.7},{-10,20.5}},
+          points={{-10,44.8},{-10,31.7},{-10,31.7},{-10,20.5}},
           color={127,0,0},
           smooth=Smooth.None));
       annotation (   Icon(coordinateSystem(preserveAspectRatio=false,
@@ -415,7 +416,8 @@ package HeatExchanger "Demo of a heat exchanger model"
 For both fluids geometry parameters, such as heat transfer area and cross section as well as heat transfer and pressure drop correlations may be chosen.
 The flow scheme may be concurrent or counterflow, defined by the respective flow directions of the fluids entering the component.
 The design flow direction with positive m_flow variables is counterflow.</p>
-</html>"));
+</html>"),
+        Diagram(graphics));
     end BasicHX;
 
     model WallConstProps

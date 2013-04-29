@@ -418,22 +418,22 @@ end PartialTwoPortTransport;
           grid={1,1},
           initialScale=0.2), graphics={
           Rectangle(
-            extent={{-201,50},{200,-50}},
+            extent={{-200,50},{200,-50}},
             lineColor={127,0,0},
             fillColor={255,255,255},
             fillPattern=FillPattern.Solid),
           Rectangle(
-            extent={{-171,45},{-83,-45}},
+            extent={{-170,44},{-82,-44}},
             lineColor={127,0,0},
             fillColor={127,0,0},
             fillPattern=FillPattern.Solid),
           Rectangle(
-            extent={{-45,45},{43,-45}},
+            extent={{-44,44},{44,-44}},
             lineColor={127,0,0},
             fillColor={127,0,0},
             fillPattern=FillPattern.Solid),
           Rectangle(
-            extent={{82,45},{170,-45}},
+            extent={{82,44},{170,-44}},
             lineColor={127,0,0},
             fillColor={127,0,0},
             fillPattern=FillPattern.Solid)}));
@@ -449,22 +449,22 @@ end PartialTwoPortTransport;
           grid={1,1},
           initialScale=0.2), graphics={
           Rectangle(
-            extent={{-200,50},{200,-51}},
+            extent={{-200,50},{200,-50}},
             lineColor={127,0,0},
             fillColor={255,255,255},
             fillPattern=FillPattern.Solid),
           Rectangle(
-            extent={{-170,44},{-82,-46}},
+            extent={{-170,44},{-82,-44}},
             lineColor={127,0,0},
             fillColor={255,255,255},
             fillPattern=FillPattern.Solid),
           Rectangle(
-            extent={{-44,46},{44,-44}},
+            extent={{-44,44},{44,-44}},
             lineColor={127,0,0},
             fillColor={255,255,255},
             fillPattern=FillPattern.Solid),
           Rectangle(
-            extent={{82,45},{170,-45}},
+            extent={{82,44},{170,-44}},
             lineColor={127,0,0},
             fillColor={255,255,255},
             fillPattern=FillPattern.Solid)}));
